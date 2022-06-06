@@ -2,7 +2,6 @@ import apache_beam as beam
 import json
 
 header = 'Data;Estado;UF;QtdVendas;QtdCancelamentos;QtdAprovados'
-columns = ['Data','Estado','UF','QtdVendas','QtdCancelamentos','QtdAprovados']
 
 states = {
     'AC': 'Acre',
