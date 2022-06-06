@@ -1,0 +1,225 @@
+Data;Estado;UF;QtdVendas;QtdCancelamentos;QtdAprovados
+2014-09-01;Minas Gerais;MG;2;0;2
+2014-09-02;Sao Paulo;SP;5;4;1
+2014-09-03;Paraiba;PB;1;1;0
+2014-09-04;Rio de Janeiro;RJ;8;2;6
+2014-09-05;Rio de Janeiro;RJ;3;1;2
+2014-09-06;Rio Grande do Norte;RN;4;1;3
+2014-09-07;Rio de Janeiro;RJ;4;3;1
+2014-09-08;Rio de Janeiro;RJ;9;5;4
+2014-09-09;Ceara;CE;1;1;0
+2014-09-10;Rio de Janeiro;RJ;9;2;7
+2014-09-11;Santa Catarina;SC;1;0;1
+2014-09-12;Rio de Janeiro;RJ;8;3;5
+2014-09-13;Minas Gerais;MG;1;0;1
+2014-09-14;Rio Grande do Sul;RS;1;0;1
+2014-09-15;Rio de Janeiro;RJ;5;3;2
+2014-09-16;Rio Grande do Sul;RS;2;1;1
+2014-09-17;Rio de Janeiro;RJ;11;4;7
+2014-09-18;Santa Catarina;SC;7;3;4
+2014-09-19;Alagoas;AL;1;1;0
+2014-09-20;Minas Gerais;MG;1;1;0
+2014-09-21;Sao Paulo;SP;8;5;3
+2014-09-22;Rio Grande do Norte;RN;2;1;1
+2014-09-23;Amazonas;AM;1;1;0
+2014-09-24;Rio Grande do Norte;RN;2;2;0
+2014-09-25;Alagoas;AL;1;0;1
+2014-09-26;Sao Paulo;SP;6;0;6
+2014-09-27;Rio de Janeiro;RJ;6;4;2
+2014-09-28;Minas Gerais;MG;2;1;1
+2014-09-29;Bahia;BA;7;5;2
+2014-09-28;Santa Catarina;SC;2;1;1
+2014-09-27;Rio Grande do Norte;RN;3;2;1
+2014-09-26;Rio Grande do Sul;RS;1;0;1
+2014-09-25;Sao Paulo;SP;6;1;5
+2014-09-24;Rio de Janeiro;RJ;10;5;5
+2014-09-23;Espirito Santo;ES;1;0;1
+2014-09-22;Rio Grande do Sul;RS;3;3;0
+2014-09-20;Rio de Janeiro;RJ;9;1;8
+2014-09-19;Sao Paulo;SP;4;1;3
+2014-09-18;Sao Paulo;SP;2;0;2
+2014-09-17;Sao Paulo;SP;2;2;0
+2014-09-16;Sao Paulo;SP;4;0;4
+2014-09-15;Sao Paulo;SP;4;2;2
+2014-09-14;Rio de Janeiro;RJ;3;2;1
+2014-09-13;Alagoas;AL;2;1;1
+2014-09-11;Pernambuco;PE;1;1;0
+2014-09-09;Sao Paulo;SP;5;2;3
+2014-09-08;Rio Grande do Sul;RS;1;1;0
+2014-09-06;Parana;PR;1;0;1
+2014-09-04;Sao Paulo;SP;5;2;3
+2014-09-03;Sao Paulo;SP;3;2;1
+2014-09-02;Rio Grande do Norte;RN;2;2;0
+2014-09-01;Sao Paulo;SP;2;0;2
+2014-09-01;Bahia;BA;3;1;2
+2014-09-03;Rio de Janeiro;RJ;7;5;2
+2014-09-05;Bahia;BA;7;4;3
+2014-09-07;Sao Paulo;SP;10;8;2
+2014-09-08;Parana;PR;4;3;1
+2014-09-10;Sao Paulo;SP;5;0;5
+2014-09-11;Rio Grande do Norte;RN;1;1;0
+2014-09-12;Santa Catarina;SC;5;4;1
+2014-09-13;Rio Grande do Sul;RS;1;1;0
+2014-09-15;Parana;PR;2;1;1
+2014-09-18;Bahia;BA;4;3;1
+2014-09-21;Rio de Janeiro;RJ;3;3;0
+2014-09-22;Sao Paulo;SP;3;1;2
+2014-09-23;Alagoas;AL;3;2;1
+2014-09-24;Sao Paulo;SP;4;2;2
+2014-09-25;Rio de Janeiro;RJ;6;1;5
+2014-09-26;Goias;GO;1;0;1
+2014-09-27;Minas Gerais;MG;4;3;1
+2014-09-29;Rio de Janeiro;RJ;6;2;4
+2014-09-28;Rio de Janeiro;RJ;4;3;1
+2014-09-27;Bahia;BA;2;1;1
+2014-09-26;Rio de Janeiro;RJ;3;1;2
+2014-09-25;Rio Grande do Norte;RN;1;0;1
+2014-09-19;Rio de Janeiro;RJ;10;2;8
+2014-09-18;Goias;GO;2;0;2
+2014-09-16;Rio de Janeiro;RJ;7;4;3
+2014-09-14;Sao Paulo;SP;6;1;5
+2014-09-13;Goias;GO;1;1;0
+2014-09-11;Rio de Janeiro;RJ;6;3;3
+2014-09-09;Rio Grande do Sul;RS;5;2;3
+2014-09-06;Rio de Janeiro;RJ;7;4;3
+2014-09-04;Rio Grande do Norte;RN;2;1;1
+2014-09-03;Pernambuco;PE;1;0;1
+2014-09-02;Bahia;BA;1;1;0
+2014-09-01;Rio de Janeiro;RJ;8;7;1
+2014-09-01;Mato Grosso do Sul;MS;2;0;2
+2014-09-03;Ceara;CE;4;3;1
+2014-09-09;Pernambuco;PE;1;1;0
+2014-09-11;Bahia;BA;1;0;1
+2014-09-13;Sao Paulo;SP;6;5;1
+2014-09-16;Paraiba;PB;2;1;1
+2014-09-19;Ceara;CE;1;1;0
+2014-09-21;Pernambuco;PE;2;2;0
+2014-09-23;Bahia;BA;3;2;1
+2014-09-24;Santa Catarina;SC;1;1;0
+2014-09-28;Rio Grande do Norte;RN;1;0;1
+2014-09-29;Santa Catarina;SC;4;3;1
+2014-09-23;Rio de Janeiro;RJ;9;6;3
+2014-09-22;Bahia;BA;3;2;1
+2014-09-18;Parana;PR;2;0;2
+2014-09-17;Ceara;CE;1;1;0
+2014-09-15;Santa Catarina;SC;4;4;0
+2014-09-13;Pernambuco;PE;1;1;0
+2014-09-11;Sao Paulo;SP;4;1;3
+2014-09-09;Santa Catarina;SC;2;0;2
+2014-09-08;Pernambuco;PE;1;0;1
+2014-09-07;Parana;PR;2;0;2
+2014-09-06;Pernambuco;PE;1;0;1
+2014-09-05;Santa Catarina;SC;1;0;1
+2014-09-04;Santa Catarina;SC;1;0;1
+2014-09-02;Santa Catarina;SC;1;0;1
+2014-09-01;Parana;PR;1;1;0
+2014-09-02;Rio de Janeiro;RJ;9;6;3
+2014-09-03;Goias;GO;1;1;0
+2014-09-04;Bahia;BA;2;1;1
+2014-09-06;Alagoas;AL;1;1;0
+2014-09-15;Minas Gerais;MG;2;2;0
+2014-09-20;Rio Grande do Sul;RS;1;0;1
+2014-09-25;Pernambuco;PE;1;0;1
+2014-09-26;Ceara;CE;1;0;1
+2014-09-27;Sao Paulo;SP;3;1;2
+2014-09-28;Bahia;BA;4;2;2
+2014-09-29;Rio Grande do Sul;RS;1;1;0
+2014-09-28;Pernambuco;PE;1;0;1
+2014-09-25;Goias;GO;1;0;1
+2014-09-23;Minas Gerais;MG;1;1;0
+2014-09-22;Minas Gerais;MG;3;2;1
+2014-09-20;Sao Paulo;SP;4;1;3
+2014-09-14;Santa Catarina;SC;1;0;1
+2014-09-13;Rio Grande do Norte;RN;2;0;2
+2014-09-10;Goias;GO;1;1;0
+2014-09-09;Rio de Janeiro;RJ;3;0;3
+2014-09-08;Bahia;BA;2;2;0
+2014-09-07;Paraiba;PB;1;0;1
+2014-09-06;Sao Paulo;SP;3;1;2
+2014-09-05;Sao Paulo;SP;5;4;1
+2014-09-11;Parana;PR;1;0;1
+2014-09-12;Pernambuco;PE;1;1;0
+2014-09-14;Pernambuco;PE;2;2;0
+2014-09-16;Santa Catarina;SC;2;0;2
+2014-09-19;Amazonas;AM;1;0;1
+2014-09-20;Bahia;BA;2;0;2
+2014-09-22;Goias;GO;2;1;1
+2014-09-29;Sao Paulo;SP;1;1;0
+2014-09-28;Parana;PR;1;0;1
+2014-09-22;Paraiba;PB;2;1;1
+2014-09-21;Bahia;BA;2;1;1
+2014-09-15;Goias;GO;2;1;1
+2014-09-11;Minas Gerais;MG;1;0;1
+2014-09-10;Parana;PR;2;0;2
+2014-09-09;Bahia;BA;1;0;1
+2014-09-05;Minas Gerais;MG;1;1;0
+2014-09-02;Amazonas;AM;1;0;1
+2014-09-10;Rio Grande do Sul;RS;1;0;1
+2014-09-13;Santa Catarina;SC;3;3;0
+2014-09-14;Sergipe;SE;1;1;0
+2014-09-17;Santa Catarina;SC;1;1;0
+2014-09-18;Rio de Janeiro;RJ;3;3;0
+2014-09-19;Bahia;BA;1;0;1
+2014-09-21;Ceara;CE;2;1;1
+2014-09-26;Rio Grande do Norte;RN;2;0;2
+2014-09-29;Rio Grande do Norte;RN;1;1;0
+2014-09-26;Minas Gerais;MG;2;0;2
+2014-09-24;Espirito Santo;ES;2;1;1
+2014-09-21;Rio Grande do Norte;RN;1;0;1
+2014-09-14;Paraiba;PB;1;1;0
+2014-09-12;Alagoas;AL;2;1;1
+2014-09-11;Alagoas;AL;3;2;1
+2014-09-10;Santa Catarina;SC;1;1;0
+2014-09-09;Parana;PR;2;2;0
+2014-09-08;Amazonas;AM;1;1;0
+2014-09-06;Paraiba;PB;1;1;0
+2014-09-05;Goias;GO;1;1;0
+2014-09-04;Parana;PR;2;1;1
+2014-09-03;Santa Catarina;SC;1;0;1
+2014-09-13;Rio de Janeiro;RJ;2;0;2
+2014-09-14;Goias;GO;3;3;0
+2014-09-17;Mato Grosso do Sul;MS;1;1;0
+2014-09-22;Santa Catarina;SC;1;1;0
+2014-09-24;Mato Grosso do Sul;MS;1;1;0
+2014-09-28;Goias;GO;4;4;0
+2014-09-28;Alagoas;AL;1;1;0
+2014-09-26;Bahia;BA;3;2;1
+2014-09-23;Sao Paulo;SP;1;0;1
+2014-09-21;Santa Catarina;SC;1;1;0
+2014-09-17;Espirito Santo;ES;1;1;0
+2014-09-13;Bahia;BA;1;1;0
+2014-09-12;Bahia;BA;4;3;1
+2014-09-10;Bahia;BA;1;0;1
+2014-09-08;Rio Grande do Norte;RN;1;0;1
+2014-09-07;Goias;GO;2;2;0
+2014-09-01;Ceara;CE;2;0;2
+2014-09-05;Pernambuco;PE;2;0;2
+2014-09-16;Parana;PR;2;2;0
+2014-09-21;Parana;PR;1;0;1
+2014-09-22;Mato Grosso do Sul;MS;1;0;1
+2014-09-26;Espirito Santo;ES;1;0;1
+2014-09-25;Minas Gerais;MG;1;0;1
+2014-09-19;Santa Catarina;SC;1;1;0
+2014-09-17;Paraiba;PB;1;1;0
+2014-09-07;Alagoas;AL;1;0;1
+2014-09-06;Sergipe;SE;1;0;1
+2014-09-03;Rio Grande do Norte;RN;2;0;2
+2014-09-17;Minas Gerais;MG;1;0;1
+2014-09-20;Santa Catarina;SC;2;1;1
+2014-09-25;Ceara;CE;1;0;1
+2014-09-15;Bahia;BA;1;1;0
+2014-09-14;Ceara;CE;1;1;0
+2014-09-06;Ceara;CE;1;0;1
+2014-09-02;Pernambuco;PE;1;0;1
+2014-09-08;Santa Catarina;SC;1;0;1
+2014-09-11;Paraiba;PB;1;1;0
+2014-09-17;Parana;PR;1;1;0
+2014-09-23;Rio Grande do Norte;RN;1;0;1
+2014-09-25;Santa Catarina;SC;1;1;0
+2014-09-27;Goias;GO;1;0;1
+2014-09-27;Santa Catarina;SC;1;0;1
+2014-09-25;Bahia;BA;1;1;0
+2014-09-20;Pernambuco;PE;1;0;1
+2014-09-19;Rio Grande do Norte;RN;1;0;1
+2014-09-16;Rio Grande do Norte;RN;1;0;1
+2014-09-14;Minas Gerais;MG;1;1;0
