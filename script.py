@@ -87,6 +87,6 @@ with beam.Pipeline() as p2:
         | 'Read Grouped Data file' >> beam.io.ReadFromText('output-00000-of-00001.csv', skip_header_lines=True) 
         | 'Split ; again' >> beam.Map(lambda x: x.split(';')) 
         | 'Map to JSON' >> beam.Map(lambda s: '{ "Data":"' + s[0] + '","Estado":"' + s[1] + '","UF":"' + s[2] + '","QtdVendas":' + str(s[3]) + ',"QtdCancelamentos":' + str(s[4]) + ',"QtdAprovados":' + str(s[5]) + '},')
-        | beam.io.WriteToText('output', file_name_suffix='.json')
+        | beam.io.WriteToText('output', file_name_suffix='.json', header='[', footer=']')
         | 'Print the JSON file' >> beam.Map(print)
     )

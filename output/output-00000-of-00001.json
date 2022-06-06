@@ -1,5 +1,5 @@
 [
-    { "Data":"2014-09-01","Estado":"Minas Gerais","UF":"MG","QtdVendas":2,"QtdCancelamentos":0,"QtdAprovados":2},
+{ "Data":"2014-09-01","Estado":"Minas Gerais","UF":"MG","QtdVendas":2,"QtdCancelamentos":0,"QtdAprovados":2},
 { "Data":"2014-09-02","Estado":"Sao Paulo","UF":"SP","QtdVendas":5,"QtdCancelamentos":4,"QtdAprovados":1},
 { "Data":"2014-09-03","Estado":"Paraiba","UF":"PB","QtdVendas":1,"QtdCancelamentos":1,"QtdAprovados":0},
 { "Data":"2014-09-04","Estado":"Rio de Janeiro","UF":"RJ","QtdVendas":8,"QtdCancelamentos":2,"QtdAprovados":6},
