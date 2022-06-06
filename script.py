@@ -1,7 +1,10 @@
 import apache_beam as beam
+import json
+import ast
 
 header = 'Data;Estado;UF;QtdVendas;QtdCancelamentos;QtdAprovados'
 columns = ['Data','Estado','UF','QtdVendas','QtdCancelamentos','QtdAprovados']
+
 states = {
     'AC': 'Acre',
     'AL': 'Alagoas',
@@ -66,8 +69,22 @@ class SumQtds(beam.DoFn):
         tup = tuple(convertedTuple)
         yield tup
 
+class AddToList(beam.DoFn):
+    def __init__(self):
+        self.window = beam.transforms.window.GlobalWindow()
+    def process(self, obj):
+        convertedDict = json.loads(obj)
+        self.jsonList.append(convertedDict)
+    def start_bundle(self):
+        self.jsonList = []
+    def finish_bundle(self):
+        yield beam.utils.windowed_value.WindowedValue(
+        value= self.jsonList,
+        timestamp=0,
+        windows=[self.window],
+    )
+
 with beam.Pipeline() as p1:
-    #linesIBGE = pipeline | 'ReadIBGEData' >> beam.io.ReadFromText('data/EstadosIBGE.csv')
     groupedData = (
         p1
         | 'Read Vendas file' >> beam.io.ReadFromText('data/Vendas_por_dia.csv', skip_header_lines=True) 
@@ -78,15 +95,17 @@ with beam.Pipeline() as p1:
         | 'Values' >> beam.Values()
         | beam.Map(lambda s: s[0] + ';' + s[1] + ';' + s[2] + ';' + str(s[3]) + ';' + str(s[4]) + ';' + str(s[5]))
         | beam.io.WriteToText('output', file_name_suffix='.csv', header=header)
-        | beam.Map(print)
     )
+
 
 with beam.Pipeline() as p2:
     outputJSON = (
         p2
         | 'Read Grouped Data file' >> beam.io.ReadFromText('output-00000-of-00001.csv', skip_header_lines=True) 
         | 'Split ; again' >> beam.Map(lambda x: x.split(';')) 
-        | 'Map to JSON' >> beam.Map(lambda s: '{ "Data":"' + s[0] + '","Estado":"' + s[1] + '","UF":"' + s[2] + '","QtdVendas":' + str(s[3]) + ',"QtdCancelamentos":' + str(s[4]) + ',"QtdAprovados":' + str(s[5]) + '},')
-        | beam.io.WriteToText('output', file_name_suffix='.json', header='[', footer=']')
+        | 'Map to Objects' >> beam.Map(lambda s: '{ "Data":"' + s[0] + '","Estado":"' + s[1] + '","UF":"' + s[2] + '","QtdVendas":' + str(s[3]) + ',"QtdCancelamentos":' + str(s[4]) + ',"QtdAprovados":' + str(s[5]) + '}')
+        | 'Add to List' >> beam.ParDo(AddToList())
+        | 'Format JSON' >>  beam.Map(json.dumps)
+        | beam.io.WriteToText('output', file_name_suffix='.json')
         | 'Print the JSON file' >> beam.Map(print)
     )
