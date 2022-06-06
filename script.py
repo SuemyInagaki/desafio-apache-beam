@@ -1,6 +1,5 @@
 import apache_beam as beam
 import json
-import ast
 
 header = 'Data;Estado;UF;QtdVendas;QtdCancelamentos;QtdAprovados'
 columns = ['Data','Estado','UF','QtdVendas','QtdCancelamentos','QtdAprovados']
@@ -97,7 +96,6 @@ with beam.Pipeline() as p1:
         | beam.io.WriteToText('output', file_name_suffix='.csv', header=header)
     )
 
-
 with beam.Pipeline() as p2:
     outputJSON = (
         p2
@@ -107,5 +105,4 @@ with beam.Pipeline() as p2:
         | 'Add to List' >> beam.ParDo(AddToList())
         | 'Format JSON' >>  beam.Map(json.dumps)
         | beam.io.WriteToText('output', file_name_suffix='.json')
-        | 'Print the JSON file' >> beam.Map(print)
     )
