@@ -66,10 +66,10 @@ class SumQtds(beam.DoFn):
         tup = tuple(convertedTuple)
         yield tup
 
-with beam.Pipeline() as pipeline:
+with beam.Pipeline() as p1:
     #linesIBGE = pipeline | 'ReadIBGEData' >> beam.io.ReadFromText('data/EstadosIBGE.csv')
     groupedData = (
-        pipeline 
+        p1
         | 'Read Vendas file' >> beam.io.ReadFromText('data/Vendas_por_dia.csv', skip_header_lines=True) 
         | 'Split ;' >> beam.Map(lambda x: x.split(';')) 
         | beam.ParDo(CreateOutputFields())
@@ -81,7 +81,12 @@ with beam.Pipeline() as pipeline:
         | beam.Map(print)
     )
 
-    # outputJSON = (
-    #     | 'Map to JSON' >> beam.Map(lambda s: '{ "Data":"' + s[0] + '","Estado":"' + s[1] + '","UF":"' + s[2] + '","QtdVendas":"' + str(s[3]) + '","QtdCancelamentos":"' + str(s[4]) + '","QtdAprovados":"' + str(s[5]) + '"},')
-    #     | beam.Map(print)
-    # )
+with beam.Pipeline() as p2:
+    outputJSON = (
+        p2
+        | 'Read Grouped Data file' >> beam.io.ReadFromText('output-00000-of-00001.csv', skip_header_lines=True) 
+        | 'Split ; again' >> beam.Map(lambda x: x.split(';')) 
+        | 'Map to JSON' >> beam.Map(lambda s: '{ "Data":"' + s[0] + '","Estado":"' + s[1] + '","UF":"' + s[2] + '","QtdVendas":' + str(s[3]) + ',"QtdCancelamentos":' + str(s[4]) + ',"QtdAprovados":' + str(s[5]) + '},')
+        | beam.io.WriteToText('output', file_name_suffix='.json')
+        | 'Print the JSON file' >> beam.Map(print)
+    )
