@@ -3,52 +3,25 @@ import json
 
 header = 'Data;Estado;UF;QtdVendas;QtdCancelamentos;QtdAprovados'
 
-states = {
-    'AC': 'Acre',
-    'AL': 'Alagoas',
-    'AP': 'Amapa',
-    'AM': 'Amazonas',
-    'BA': 'Bahia',
-    'CE': 'Ceara',
-    'DF': 'Distrito Federal',
-    'ES': 'Espirito Santo',
-    'GO': 'Goias',
-    'MA': 'Maranhao',
-    'MT': 'Mato Grosso',
-    'MS': 'Mato Grosso do Sul',
-    'MG': 'Minas Gerais',
-    'PA': 'Para',
-    'PB': 'Paraiba',
-    'PR': 'Parana',
-    'PE': 'Pernambuco',
-    'PI': 'Piaui',
-    'RJ': 'Rio de Janeiro',
-    'RN': 'Rio Grande do Norte',
-    'RS': 'Rio Grande do Sul',
-    'RO': 'Rondonia',
-    'RR': 'Roraima',
-    'SC': 'Santa Catarina',
-    'SP': 'Sao Paulo',
-    'SE': 'Sergipe',
-    'TO': 'Tocantins'
-}
-
+# DoFunction to create the requested columns for output
 class CreateOutputFields(beam.DoFn):
     def __init__(self):
         return
     def process(self, line):
         line[0] = line[1]
-        line[1] = states[line[2]]
-        status = line[3]
+        line[1] = ''
+        status = line[4]
+        code = line[3]
         line[3] = 1
         if (status == 'Aprovado'):    
-            line.append(0)
+            line[4] = 0
             line.append(1)
         else:
-            line.append(1)
+            line[4] = 1
             line.append(0)
-        yield line
+        yield [code] + line
 
+# DoFunction to sum the QtdVendas, QtdCancelamentos and QtdAprovados for each Data and State
 class SumQtds(beam.DoFn):
     def __init__(self):
         return
@@ -58,15 +31,16 @@ class SumQtds(beam.DoFn):
         qtdCancelados = 0
         qtdAprovados = 0
         for value in values:
-            qtdVendas += value[3]
-            qtdCancelados += value[4]
-            qtdAprovados += value[5]
-        values = [values[0][0], values[0][1], values[0][2], qtdVendas, qtdCancelados, qtdAprovados]
+            qtdVendas += value[4]
+            qtdCancelados += value[5]
+            qtdAprovados += value[6]
+        values = [values[0][0], values[0][1], values[0][2], values[0][3], qtdVendas, qtdCancelados, qtdAprovados]
         convertedTuple = list(tup)
         convertedTuple[1] = values
         tup = tuple(convertedTuple)
         yield tup
 
+# DoFunction to add all objects in a single list
 class AddToList(beam.DoFn):
     def __init__(self):
         self.window = beam.transforms.window.GlobalWindow()
@@ -82,26 +56,61 @@ class AddToList(beam.DoFn):
         windows=[self.window],
     )
 
-with beam.Pipeline() as p1:
-    groupedData = (
-        p1
-        | 'Read Vendas file' >> beam.io.ReadFromText('data/Vendas_por_dia.csv', skip_header_lines=True) 
-        | 'Split ;' >> beam.Map(lambda x: x.split(';')) 
-        | beam.ParDo(CreateOutputFields())
-        | 'Group by UF and Date' >> beam.GroupBy(lambda s: s[0]+s[1])
-        | beam.ParDo(SumQtds())
-        | 'Values' >> beam.Values()
-        | beam.Map(lambda s: s[0] + ';' + s[1] + ';' + s[2] + ';' + str(s[3]) + ';' + str(s[4]) + ';' + str(s[5]))
-        | beam.io.WriteToText('output', file_name_suffix='.csv', header=header)
+# DoFunction to replace the empty string with the respective state name and return each data separately
+class ReplaceStateName(beam.DoFn):
+    def __init__(self):
+        self.window = beam.transforms.window.GlobalWindow()
+    def process(self, l):
+        state = l[0][0]
+        if len(l[1]) != 0:
+            for i in range(0,len(l[1][0])):
+                l[1][0][i][2] = state
+                yield l[1][0][i][1:]
+
+
+with beam.Pipeline() as pipeline:
+    # Read and format IBGE file
+    IBGEdata = (
+        pipeline
+        | 'Read IBGE file' >> beam.io.ReadFromText('data/EstadosIBGE.csv', skip_header_lines=True) 
+        | 'Split the IBGE data by ;' >> beam.Map(lambda x: x.split(';'))
+        | 'Select useful columns' >>  beam.Map(lambda s: tuple([s[1], str(s[0])]))
     )
 
-with beam.Pipeline() as p2:
-    outputJSON = (
-        p2
-        | 'Read Grouped Data file' >> beam.io.ReadFromText('output-00000-of-00001.csv', skip_header_lines=True) 
-        | 'Split ; again' >> beam.Map(lambda x: x.split(';')) 
-        | 'Map to Objects' >> beam.Map(lambda s: '{ "Data":"' + s[0] + '","Estado":"' + s[1] + '","UF":"' + s[2] + '","QtdVendas":' + str(s[3]) + ',"QtdCancelamentos":' + str(s[4]) + ',"QtdAprovados":' + str(s[5]) + '}')
-        | 'Add to List' >> beam.ParDo(AddToList())
-        | 'Format JSON' >>  beam.Map(json.dumps)
-        | beam.io.WriteToText('output', file_name_suffix='.json')
+    # Read and format Vendas file
+    vendasData = (
+        pipeline
+        | 'Read Vendas file' >> beam.io.ReadFromText('data/Vendas_por_dia.csv', skip_header_lines=True) 
+        | 'Split the Vendas data by ;' >> beam.Map(lambda x: x.split(';')) 
+        | 'Create the requested columns for output' >> beam.ParDo(CreateOutputFields())
+        | 'Group by UF and Date' >> beam.GroupBy(lambda s: s[0]+s[1])
+        | 'Add the amounts for each group' >> beam.ParDo(SumQtds())
+        | 'Get grouped Vendas values' >> beam.Values()
+        | 'Group by UF Code' >> beam.GroupBy(lambda s: s[0]) # line necessary to merge with IBGEdata
+    )
+
+    # Merge the IBGE and Vendas data to relate the UF with the state name
+    mergedData =  ((IBGEdata, vendasData) | 'Merge PCollections' >> beam.CoGroupByKey())
+
+    # Generate a PCollection with the output data
+    outputData = (
+        mergedData
+        | 'Get mergedData values' >> beam.Values()
+        | 'Replaces the Estado field with its name' >> beam.ParDo(ReplaceStateName())
+    )
+
+    # Format data and write to CSV file
+    CSVdata = (
+        outputData
+        | 'Format data for CSV'>> beam.Map(lambda s: s[0] + ';' + s[1] + ';' + s[2] + ';' + str(s[3]) + ';' + str(s[4]) + ';' + str(s[5]))
+        | 'Write CSV file' >> beam.io.WriteToText('output', file_name_suffix='.csv', header=header)
+    )
+
+    # Format data and write to JSON file
+    JSONdata = (
+        outputData
+        | 'Format data for objects' >> beam.Map(lambda s: '{ "Data":"' + s[0] + '","Estado":"' + s[1] + '","UF":"' + s[2] + '","QtdVendas":' + str(s[3]) + ',"QtdCancelamentos":' + str(s[4]) + ',"QtdAprovados":' + str(s[5]) + '}')
+        | 'Add formatted objects to the list' >> beam.ParDo(AddToList())
+        | 'Fix double quotes' >>  beam.Map(json.dumps)
+        | 'Write JSON file' >> beam.io.WriteToText('output', file_name_suffix='.json')
     )

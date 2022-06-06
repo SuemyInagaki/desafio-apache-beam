@@ -1,225 +1,225 @@
 Data;Estado;UF;QtdVendas;QtdCancelamentos;QtdAprovados
-2014-09-01;Minas Gerais;MG;2;0;2
-2014-09-02;Sao Paulo;SP;5;4;1
-2014-09-03;Paraiba;PB;1;1;0
-2014-09-04;Rio de Janeiro;RJ;8;2;6
-2014-09-05;Rio de Janeiro;RJ;3;1;2
-2014-09-06;Rio Grande do Norte;RN;4;1;3
-2014-09-07;Rio de Janeiro;RJ;4;3;1
-2014-09-08;Rio de Janeiro;RJ;9;5;4
-2014-09-09;Ceara;CE;1;1;0
-2014-09-10;Rio de Janeiro;RJ;9;2;7
-2014-09-11;Santa Catarina;SC;1;0;1
-2014-09-12;Rio de Janeiro;RJ;8;3;5
-2014-09-13;Minas Gerais;MG;1;0;1
-2014-09-14;Rio Grande do Sul;RS;1;0;1
-2014-09-15;Rio de Janeiro;RJ;5;3;2
-2014-09-16;Rio Grande do Sul;RS;2;1;1
-2014-09-17;Rio de Janeiro;RJ;11;4;7
-2014-09-18;Santa Catarina;SC;7;3;4
-2014-09-19;Alagoas;AL;1;1;0
-2014-09-20;Minas Gerais;MG;1;1;0
-2014-09-21;Sao Paulo;SP;8;5;3
-2014-09-22;Rio Grande do Norte;RN;2;1;1
-2014-09-23;Amazonas;AM;1;1;0
-2014-09-24;Rio Grande do Norte;RN;2;2;0
-2014-09-25;Alagoas;AL;1;0;1
-2014-09-26;Sao Paulo;SP;6;0;6
-2014-09-27;Rio de Janeiro;RJ;6;4;2
-2014-09-28;Minas Gerais;MG;2;1;1
-2014-09-29;Bahia;BA;7;5;2
-2014-09-28;Santa Catarina;SC;2;1;1
-2014-09-27;Rio Grande do Norte;RN;3;2;1
-2014-09-26;Rio Grande do Sul;RS;1;0;1
-2014-09-25;Sao Paulo;SP;6;1;5
-2014-09-24;Rio de Janeiro;RJ;10;5;5
-2014-09-23;Espirito Santo;ES;1;0;1
-2014-09-22;Rio Grande do Sul;RS;3;3;0
-2014-09-20;Rio de Janeiro;RJ;9;1;8
-2014-09-19;Sao Paulo;SP;4;1;3
-2014-09-18;Sao Paulo;SP;2;0;2
-2014-09-17;Sao Paulo;SP;2;2;0
-2014-09-16;Sao Paulo;SP;4;0;4
-2014-09-15;Sao Paulo;SP;4;2;2
-2014-09-14;Rio de Janeiro;RJ;3;2;1
-2014-09-13;Alagoas;AL;2;1;1
-2014-09-11;Pernambuco;PE;1;1;0
-2014-09-09;Sao Paulo;SP;5;2;3
-2014-09-08;Rio Grande do Sul;RS;1;1;0
-2014-09-06;Parana;PR;1;0;1
-2014-09-04;Sao Paulo;SP;5;2;3
-2014-09-03;Sao Paulo;SP;3;2;1
-2014-09-02;Rio Grande do Norte;RN;2;2;0
-2014-09-01;Sao Paulo;SP;2;0;2
-2014-09-01;Bahia;BA;3;1;2
-2014-09-03;Rio de Janeiro;RJ;7;5;2
-2014-09-05;Bahia;BA;7;4;3
-2014-09-07;Sao Paulo;SP;10;8;2
-2014-09-08;Parana;PR;4;3;1
-2014-09-10;Sao Paulo;SP;5;0;5
-2014-09-11;Rio Grande do Norte;RN;1;1;0
-2014-09-12;Santa Catarina;SC;5;4;1
-2014-09-13;Rio Grande do Sul;RS;1;1;0
-2014-09-15;Parana;PR;2;1;1
-2014-09-18;Bahia;BA;4;3;1
-2014-09-21;Rio de Janeiro;RJ;3;3;0
-2014-09-22;Sao Paulo;SP;3;1;2
-2014-09-23;Alagoas;AL;3;2;1
-2014-09-24;Sao Paulo;SP;4;2;2
-2014-09-25;Rio de Janeiro;RJ;6;1;5
-2014-09-26;Goias;GO;1;0;1
-2014-09-27;Minas Gerais;MG;4;3;1
-2014-09-29;Rio de Janeiro;RJ;6;2;4
-2014-09-28;Rio de Janeiro;RJ;4;3;1
-2014-09-27;Bahia;BA;2;1;1
-2014-09-26;Rio de Janeiro;RJ;3;1;2
-2014-09-25;Rio Grande do Norte;RN;1;0;1
-2014-09-19;Rio de Janeiro;RJ;10;2;8
-2014-09-18;Goias;GO;2;0;2
-2014-09-16;Rio de Janeiro;RJ;7;4;3
-2014-09-14;Sao Paulo;SP;6;1;5
-2014-09-13;Goias;GO;1;1;0
-2014-09-11;Rio de Janeiro;RJ;6;3;3
-2014-09-09;Rio Grande do Sul;RS;5;2;3
-2014-09-06;Rio de Janeiro;RJ;7;4;3
-2014-09-04;Rio Grande do Norte;RN;2;1;1
-2014-09-03;Pernambuco;PE;1;0;1
-2014-09-02;Bahia;BA;1;1;0
-2014-09-01;Rio de Janeiro;RJ;8;7;1
-2014-09-01;Mato Grosso do Sul;MS;2;0;2
-2014-09-03;Ceara;CE;4;3;1
-2014-09-09;Pernambuco;PE;1;1;0
-2014-09-11;Bahia;BA;1;0;1
-2014-09-13;Sao Paulo;SP;6;5;1
-2014-09-16;Paraiba;PB;2;1;1
-2014-09-19;Ceara;CE;1;1;0
-2014-09-21;Pernambuco;PE;2;2;0
-2014-09-23;Bahia;BA;3;2;1
-2014-09-24;Santa Catarina;SC;1;1;0
-2014-09-28;Rio Grande do Norte;RN;1;0;1
-2014-09-29;Santa Catarina;SC;4;3;1
-2014-09-23;Rio de Janeiro;RJ;9;6;3
-2014-09-22;Bahia;BA;3;2;1
-2014-09-18;Parana;PR;2;0;2
-2014-09-17;Ceara;CE;1;1;0
-2014-09-15;Santa Catarina;SC;4;4;0
-2014-09-13;Pernambuco;PE;1;1;0
-2014-09-11;Sao Paulo;SP;4;1;3
-2014-09-09;Santa Catarina;SC;2;0;2
-2014-09-08;Pernambuco;PE;1;0;1
-2014-09-07;Parana;PR;2;0;2
-2014-09-06;Pernambuco;PE;1;0;1
-2014-09-05;Santa Catarina;SC;1;0;1
-2014-09-04;Santa Catarina;SC;1;0;1
-2014-09-02;Santa Catarina;SC;1;0;1
-2014-09-01;Parana;PR;1;1;0
-2014-09-02;Rio de Janeiro;RJ;9;6;3
-2014-09-03;Goias;GO;1;1;0
-2014-09-04;Bahia;BA;2;1;1
-2014-09-06;Alagoas;AL;1;1;0
-2014-09-15;Minas Gerais;MG;2;2;0
-2014-09-20;Rio Grande do Sul;RS;1;0;1
-2014-09-25;Pernambuco;PE;1;0;1
-2014-09-26;Ceara;CE;1;0;1
-2014-09-27;Sao Paulo;SP;3;1;2
-2014-09-28;Bahia;BA;4;2;2
-2014-09-29;Rio Grande do Sul;RS;1;1;0
-2014-09-28;Pernambuco;PE;1;0;1
-2014-09-25;Goias;GO;1;0;1
-2014-09-23;Minas Gerais;MG;1;1;0
-2014-09-22;Minas Gerais;MG;3;2;1
-2014-09-20;Sao Paulo;SP;4;1;3
-2014-09-14;Santa Catarina;SC;1;0;1
-2014-09-13;Rio Grande do Norte;RN;2;0;2
-2014-09-10;Goias;GO;1;1;0
-2014-09-09;Rio de Janeiro;RJ;3;0;3
-2014-09-08;Bahia;BA;2;2;0
-2014-09-07;Paraiba;PB;1;0;1
-2014-09-06;Sao Paulo;SP;3;1;2
-2014-09-05;Sao Paulo;SP;5;4;1
-2014-09-11;Parana;PR;1;0;1
-2014-09-12;Pernambuco;PE;1;1;0
-2014-09-14;Pernambuco;PE;2;2;0
-2014-09-16;Santa Catarina;SC;2;0;2
-2014-09-19;Amazonas;AM;1;0;1
-2014-09-20;Bahia;BA;2;0;2
-2014-09-22;Goias;GO;2;1;1
-2014-09-29;Sao Paulo;SP;1;1;0
-2014-09-28;Parana;PR;1;0;1
-2014-09-22;Paraiba;PB;2;1;1
-2014-09-21;Bahia;BA;2;1;1
-2014-09-15;Goias;GO;2;1;1
-2014-09-11;Minas Gerais;MG;1;0;1
-2014-09-10;Parana;PR;2;0;2
-2014-09-09;Bahia;BA;1;0;1
-2014-09-05;Minas Gerais;MG;1;1;0
-2014-09-02;Amazonas;AM;1;0;1
-2014-09-10;Rio Grande do Sul;RS;1;0;1
-2014-09-13;Santa Catarina;SC;3;3;0
-2014-09-14;Sergipe;SE;1;1;0
-2014-09-17;Santa Catarina;SC;1;1;0
-2014-09-18;Rio de Janeiro;RJ;3;3;0
-2014-09-19;Bahia;BA;1;0;1
-2014-09-21;Ceara;CE;2;1;1
-2014-09-26;Rio Grande do Norte;RN;2;0;2
-2014-09-29;Rio Grande do Norte;RN;1;1;0
-2014-09-26;Minas Gerais;MG;2;0;2
-2014-09-24;Espirito Santo;ES;2;1;1
-2014-09-21;Rio Grande do Norte;RN;1;0;1
-2014-09-14;Paraiba;PB;1;1;0
-2014-09-12;Alagoas;AL;2;1;1
-2014-09-11;Alagoas;AL;3;2;1
-2014-09-10;Santa Catarina;SC;1;1;0
-2014-09-09;Parana;PR;2;2;0
-2014-09-08;Amazonas;AM;1;1;0
-2014-09-06;Paraiba;PB;1;1;0
-2014-09-05;Goias;GO;1;1;0
-2014-09-04;Parana;PR;2;1;1
-2014-09-03;Santa Catarina;SC;1;0;1
-2014-09-13;Rio de Janeiro;RJ;2;0;2
-2014-09-14;Goias;GO;3;3;0
-2014-09-17;Mato Grosso do Sul;MS;1;1;0
-2014-09-22;Santa Catarina;SC;1;1;0
-2014-09-24;Mato Grosso do Sul;MS;1;1;0
-2014-09-28;Goias;GO;4;4;0
-2014-09-28;Alagoas;AL;1;1;0
-2014-09-26;Bahia;BA;3;2;1
-2014-09-23;Sao Paulo;SP;1;0;1
-2014-09-21;Santa Catarina;SC;1;1;0
-2014-09-17;Espirito Santo;ES;1;1;0
-2014-09-13;Bahia;BA;1;1;0
-2014-09-12;Bahia;BA;4;3;1
-2014-09-10;Bahia;BA;1;0;1
-2014-09-08;Rio Grande do Norte;RN;1;0;1
-2014-09-07;Goias;GO;2;2;0
-2014-09-01;Ceara;CE;2;0;2
-2014-09-05;Pernambuco;PE;2;0;2
-2014-09-16;Parana;PR;2;2;0
-2014-09-21;Parana;PR;1;0;1
-2014-09-22;Mato Grosso do Sul;MS;1;0;1
-2014-09-26;Espirito Santo;ES;1;0;1
-2014-09-25;Minas Gerais;MG;1;0;1
-2014-09-19;Santa Catarina;SC;1;1;0
-2014-09-17;Paraiba;PB;1;1;0
-2014-09-07;Alagoas;AL;1;0;1
-2014-09-06;Sergipe;SE;1;0;1
-2014-09-03;Rio Grande do Norte;RN;2;0;2
-2014-09-17;Minas Gerais;MG;1;0;1
-2014-09-20;Santa Catarina;SC;2;1;1
-2014-09-25;Ceara;CE;1;0;1
-2014-09-15;Bahia;BA;1;1;0
-2014-09-14;Ceara;CE;1;1;0
-2014-09-06;Ceara;CE;1;0;1
-2014-09-02;Pernambuco;PE;1;0;1
-2014-09-08;Santa Catarina;SC;1;0;1
-2014-09-11;Paraiba;PB;1;1;0
-2014-09-17;Parana;PR;1;1;0
-2014-09-23;Rio Grande do Norte;RN;1;0;1
-2014-09-25;Santa Catarina;SC;1;1;0
-2014-09-27;Goias;GO;1;0;1
-2014-09-27;Santa Catarina;SC;1;0;1
-2014-09-25;Bahia;BA;1;1;0
-2014-09-20;Pernambuco;PE;1;0;1
-2014-09-19;Rio Grande do Norte;RN;1;0;1
-2014-09-16;Rio Grande do Norte;RN;1;0;1
-2014-09-14;Minas Gerais;MG;1;1;0
+41901;Alagoas;AL;1;1;0
+41907;Alagoas;AL;1;0;1
+41895;Alagoas;AL;2;1;1
+41905;Alagoas;AL;3;2;1
+41888;Alagoas;AL;1;1;0
+41894;Alagoas;AL;2;1;1
+41893;Alagoas;AL;3;2;1
+41910;Alagoas;AL;1;1;0
+41889;Alagoas;AL;1;0;1
+41905;Amazonas;AM;1;1;0
+41901;Amazonas;AM;1;0;1
+41884;Amazonas;AM;1;0;1
+41890;Amazonas;AM;1;1;0
+41911;Bahia;BA;7;5;2
+41883;Bahia;BA;3;1;2
+41887;Bahia;BA;7;4;3
+41900;Bahia;BA;4;3;1
+41909;Bahia;BA;2;1;1
+41884;Bahia;BA;1;1;0
+41893;Bahia;BA;1;0;1
+41905;Bahia;BA;3;2;1
+41904;Bahia;BA;3;2;1
+41886;Bahia;BA;2;1;1
+41910;Bahia;BA;4;2;2
+41890;Bahia;BA;2;2;0
+41902;Bahia;BA;2;0;2
+41903;Bahia;BA;2;1;1
+41891;Bahia;BA;1;0;1
+41901;Bahia;BA;1;0;1
+41908;Bahia;BA;3;2;1
+41895;Bahia;BA;1;1;0
+41894;Bahia;BA;4;3;1
+41892;Bahia;BA;1;0;1
+41897;Bahia;BA;1;1;0
+41907;Bahia;BA;1;1;0
+41891;Ceará;CE;1;1;0
+41885;Ceará;CE;4;3;1
+41901;Ceará;CE;1;1;0
+41899;Ceará;CE;1;1;0
+41908;Ceará;CE;1;0;1
+41903;Ceará;CE;2;1;1
+41883;Ceará;CE;2;0;2
+41907;Ceará;CE;1;0;1
+41896;Ceará;CE;1;1;0
+41888;Ceará;CE;1;0;1
+41905;Espírito Santo;ES;1;0;1
+41906;Espírito Santo;ES;2;1;1
+41899;Espírito Santo;ES;1;1;0
+41908;Espírito Santo;ES;1;0;1
+41908;Goiás;GO;1;0;1
+41900;Goiás;GO;2;0;2
+41895;Goiás;GO;1;1;0
+41885;Goiás;GO;1;1;0
+41907;Goiás;GO;1;0;1
+41892;Goiás;GO;1;1;0
+41904;Goiás;GO;2;1;1
+41897;Goiás;GO;2;1;1
+41887;Goiás;GO;1;1;0
+41896;Goiás;GO;3;3;0
+41910;Goiás;GO;4;4;0
+41889;Goiás;GO;2;2;0
+41909;Goiás;GO;1;0;1
+41883;Mato Grosso do Sul;MS;2;0;2
+41899;Mato Grosso do Sul;MS;1;1;0
+41906;Mato Grosso do Sul;MS;1;1;0
+41904;Mato Grosso do Sul;MS;1;0;1
+41883;Minas Gerais;MG;2;0;2
+41895;Minas Gerais;MG;1;0;1
+41902;Minas Gerais;MG;1;1;0
+41910;Minas Gerais;MG;2;1;1
+41909;Minas Gerais;MG;4;3;1
+41897;Minas Gerais;MG;2;2;0
+41905;Minas Gerais;MG;1;1;0
+41904;Minas Gerais;MG;3;2;1
+41893;Minas Gerais;MG;1;0;1
+41887;Minas Gerais;MG;1;1;0
+41908;Minas Gerais;MG;2;0;2
+41907;Minas Gerais;MG;1;0;1
+41899;Minas Gerais;MG;1;0;1
+41896;Minas Gerais;MG;1;1;0
+41885;Paraíba;PB;1;1;0
+41898;Paraíba;PB;2;1;1
+41889;Paraíba;PB;1;0;1
+41904;Paraíba;PB;2;1;1
+41896;Paraíba;PB;1;1;0
+41888;Paraíba;PB;1;1;0
+41899;Paraíba;PB;1;1;0
+41893;Paraíba;PB;1;1;0
+41888;Paraná;PR;1;0;1
+41890;Paraná;PR;4;3;1
+41897;Paraná;PR;2;1;1
+41900;Paraná;PR;2;0;2
+41889;Paraná;PR;2;0;2
+41883;Paraná;PR;1;1;0
+41893;Paraná;PR;1;0;1
+41910;Paraná;PR;1;0;1
+41892;Paraná;PR;2;0;2
+41891;Paraná;PR;2;2;0
+41886;Paraná;PR;2;1;1
+41898;Paraná;PR;2;2;0
+41903;Paraná;PR;1;0;1
+41899;Paraná;PR;1;1;0
+41893;Pernambuco;PE;1;1;0
+41885;Pernambuco;PE;1;0;1
+41891;Pernambuco;PE;1;1;0
+41903;Pernambuco;PE;2;2;0
+41895;Pernambuco;PE;1;1;0
+41890;Pernambuco;PE;1;0;1
+41888;Pernambuco;PE;1;0;1
+41907;Pernambuco;PE;1;0;1
+41910;Pernambuco;PE;1;0;1
+41894;Pernambuco;PE;1;1;0
+41896;Pernambuco;PE;2;2;0
+41887;Pernambuco;PE;2;0;2
+41884;Pernambuco;PE;1;0;1
+41902;Pernambuco;PE;1;0;1
+41886;Rio de Janeiro;RJ;8;2;6
+41887;Rio de Janeiro;RJ;3;1;2
+41889;Rio de Janeiro;RJ;4;3;1
+41890;Rio de Janeiro;RJ;9;5;4
+41892;Rio de Janeiro;RJ;9;2;7
+41894;Rio de Janeiro;RJ;8;3;5
+41897;Rio de Janeiro;RJ;5;3;2
+41899;Rio de Janeiro;RJ;11;4;7
+41909;Rio de Janeiro;RJ;6;4;2
+41906;Rio de Janeiro;RJ;10;5;5
+41902;Rio de Janeiro;RJ;9;1;8
+41896;Rio de Janeiro;RJ;3;2;1
+41885;Rio de Janeiro;RJ;7;5;2
+41903;Rio de Janeiro;RJ;3;3;0
+41907;Rio de Janeiro;RJ;6;1;5
+41911;Rio de Janeiro;RJ;6;2;4
+41910;Rio de Janeiro;RJ;4;3;1
+41908;Rio de Janeiro;RJ;3;1;2
+41901;Rio de Janeiro;RJ;10;2;8
+41898;Rio de Janeiro;RJ;7;4;3
+41893;Rio de Janeiro;RJ;6;3;3
+41888;Rio de Janeiro;RJ;7;4;3
+41883;Rio de Janeiro;RJ;8;7;1
+41905;Rio de Janeiro;RJ;9;6;3
+41884;Rio de Janeiro;RJ;9;6;3
+41891;Rio de Janeiro;RJ;3;0;3
+41900;Rio de Janeiro;RJ;3;3;0
+41895;Rio de Janeiro;RJ;2;0;2
+41888;Rio Grande do Norte;RN;4;1;3
+41904;Rio Grande do Norte;RN;2;1;1
+41906;Rio Grande do Norte;RN;2;2;0
+41909;Rio Grande do Norte;RN;3;2;1
+41884;Rio Grande do Norte;RN;2;2;0
+41893;Rio Grande do Norte;RN;1;1;0
+41907;Rio Grande do Norte;RN;1;0;1
+41886;Rio Grande do Norte;RN;2;1;1
+41910;Rio Grande do Norte;RN;1;0;1
+41895;Rio Grande do Norte;RN;2;0;2
+41908;Rio Grande do Norte;RN;2;0;2
+41911;Rio Grande do Norte;RN;1;1;0
+41903;Rio Grande do Norte;RN;1;0;1
+41890;Rio Grande do Norte;RN;1;0;1
+41885;Rio Grande do Norte;RN;2;0;2
+41905;Rio Grande do Norte;RN;1;0;1
+41901;Rio Grande do Norte;RN;1;0;1
+41898;Rio Grande do Norte;RN;1;0;1
+41896;Rio Grande do Sul;RS;1;0;1
+41898;Rio Grande do Sul;RS;2;1;1
+41908;Rio Grande do Sul;RS;1;0;1
+41904;Rio Grande do Sul;RS;3;3;0
+41890;Rio Grande do Sul;RS;1;1;0
+41895;Rio Grande do Sul;RS;1;1;0
+41891;Rio Grande do Sul;RS;5;2;3
+41902;Rio Grande do Sul;RS;1;0;1
+41911;Rio Grande do Sul;RS;1;1;0
+41892;Rio Grande do Sul;RS;1;0;1
+41893;Santa Catarina;SC;1;0;1
+41900;Santa Catarina;SC;7;3;4
+41910;Santa Catarina;SC;2;1;1
+41894;Santa Catarina;SC;5;4;1
+41906;Santa Catarina;SC;1;1;0
+41911;Santa Catarina;SC;4;3;1
+41897;Santa Catarina;SC;4;4;0
+41891;Santa Catarina;SC;2;0;2
+41887;Santa Catarina;SC;1;0;1
+41886;Santa Catarina;SC;1;0;1
+41884;Santa Catarina;SC;1;0;1
+41896;Santa Catarina;SC;1;0;1
+41898;Santa Catarina;SC;2;0;2
+41895;Santa Catarina;SC;3;3;0
+41899;Santa Catarina;SC;1;1;0
+41892;Santa Catarina;SC;1;1;0
+41885;Santa Catarina;SC;1;0;1
+41904;Santa Catarina;SC;1;1;0
+41903;Santa Catarina;SC;1;1;0
+41901;Santa Catarina;SC;1;1;0
+41902;Santa Catarina;SC;2;1;1
+41890;Santa Catarina;SC;1;0;1
+41907;Santa Catarina;SC;1;1;0
+41909;Santa Catarina;SC;1;0;1
+41884;São Paulo;SP;5;4;1
+41903;São Paulo;SP;8;5;3
+41908;São Paulo;SP;6;0;6
+41907;São Paulo;SP;6;1;5
+41901;São Paulo;SP;4;1;3
+41900;São Paulo;SP;2;0;2
+41899;São Paulo;SP;2;2;0
+41898;São Paulo;SP;4;0;4
+41897;São Paulo;SP;4;2;2
+41891;São Paulo;SP;5;2;3
+41886;São Paulo;SP;5;2;3
+41885;São Paulo;SP;3;2;1
+41883;São Paulo;SP;2;0;2
+41889;São Paulo;SP;10;8;2
+41892;São Paulo;SP;5;0;5
+41904;São Paulo;SP;3;1;2
+41906;São Paulo;SP;4;2;2
+41896;São Paulo;SP;6;1;5
+41895;São Paulo;SP;6;5;1
+41893;São Paulo;SP;4;1;3
+41909;São Paulo;SP;3;1;2
+41902;São Paulo;SP;4;1;3
+41888;São Paulo;SP;3;1;2
+41887;São Paulo;SP;5;4;1
+41911;São Paulo;SP;1;1;0
+41905;São Paulo;SP;1;0;1
+41896;Sergipe;SE;1;1;0
+41888;Sergipe;SE;1;0;1
