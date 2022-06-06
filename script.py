@@ -70,7 +70,7 @@ class ReplaceStateName(beam.DoFn):
 
 with beam.Pipeline() as pipeline:
     # Read and format IBGE file
-    IBGEdata = (
+    ibgeData = (
         pipeline
         | 'Read IBGE file' >> beam.io.ReadFromText('data/EstadosIBGE.csv', skip_header_lines=True) 
         | 'Split the IBGE data by ;' >> beam.Map(lambda x: x.split(';'))
@@ -90,7 +90,7 @@ with beam.Pipeline() as pipeline:
     )
 
     # Merge the IBGE and Vendas data to relate the UF with the state name
-    mergedData =  ((IBGEdata, vendasData) | 'Merge PCollections' >> beam.CoGroupByKey())
+    mergedData =  ((ibgeData, vendasData) | 'Merge PCollections' >> beam.CoGroupByKey())
 
     # Generate a PCollection with the output data
     outputData = (
@@ -100,14 +100,14 @@ with beam.Pipeline() as pipeline:
     )
 
     # Format data and write to CSV file
-    CSVdata = (
+    csvData = (
         outputData
         | 'Format data for CSV'>> beam.Map(lambda s: s[0] + ';' + s[1] + ';' + s[2] + ';' + str(s[3]) + ';' + str(s[4]) + ';' + str(s[5]))
         | 'Write CSV file' >> beam.io.WriteToText('output', file_name_suffix='.csv', header=header)
     )
 
     # Format data and write to JSON file
-    JSONdata = (
+    jsonData = (
         outputData
         | 'Format data for objects' >> beam.Map(lambda s: '{ "Data":"' + s[0] + '","Estado":"' + s[1] + '","UF":"' + s[2] + '","QtdVendas":' + str(s[3]) + ',"QtdCancelamentos":' + str(s[4]) + ',"QtdAprovados":' + str(s[5]) + '}')
         | 'Add formatted objects to the list' >> beam.ParDo(AddToList())
