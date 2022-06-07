@@ -7,7 +7,6 @@ header = 'Data;Estado;UF;QtdVendas;QtdCancelamentos;QtdAprovados'
 # datetime to name the file
 dt = datetime.now()
 str_dt = dt.strftime("%d-%m-%Y,%H-%M-%S").split(',')[1]
-print(str_dt)
 
 # DoFunction to create the requested columns for output
 class CreateOutputFields(beam.DoFn):
