@@ -1,7 +1,13 @@
 import apache_beam as beam
+from datetime import datetime
 import json
 
 header = 'Data;Estado;UF;QtdVendas;QtdCancelamentos;QtdAprovados'
+
+# datetime to name the file
+dt = datetime.now()
+str_dt = dt.strftime("%d-%m-%Y,%H-%M-%S").split(',')[1]
+print(str_dt)
 
 # DoFunction to create the requested columns for output
 class CreateOutputFields(beam.DoFn):
@@ -103,7 +109,7 @@ with beam.Pipeline() as pipeline:
     csvData = (
         outputData
         | 'Format data for CSV'>> beam.Map(lambda s: s[0] + ';' + s[1] + ';' + s[2] + ';' + str(s[3]) + ';' + str(s[4]) + ';' + str(s[5]))
-        | 'Write CSV file' >> beam.io.WriteToText('output', file_name_suffix='.csv', header=header)
+        | 'Write CSV file' >> beam.io.WriteToText('output-' + str_dt, file_name_suffix='.csv', header=header)
     )
 
     # Format data and write to JSON file
@@ -112,5 +118,5 @@ with beam.Pipeline() as pipeline:
         | 'Format data for objects' >> beam.Map(lambda s: '{ "Data":"' + s[0] + '","Estado":"' + s[1] + '","UF":"' + s[2] + '","QtdVendas":' + str(s[3]) + ',"QtdCancelamentos":' + str(s[4]) + ',"QtdAprovados":' + str(s[5]) + '}')
         | 'Add formatted objects to the list' >> beam.ParDo(AddToList())
         | 'Fix double quotes' >>  beam.Map(json.dumps)
-        | 'Write JSON file' >> beam.io.WriteToText('output', file_name_suffix='.json')
+        | 'Write JSON file' >> beam.io.WriteToText('output-' + str_dt, file_name_suffix='.json')
     )
